@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 class Page1 extends StatelessWidget {
@@ -7,14 +5,14 @@ class Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold (
+    return Scaffold(
       body: Center(
-        child: ElevatedButton (child: Text('data'),
-        onPressed: () {
-          Navigator.pushNamed (context, '/page2');
-          },
-          )
+        child: ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/page2');
+            },
+            child: Text('Pindah ke halaman 2 ')),
       ),
     );
   }
-} 
+}
